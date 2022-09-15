@@ -1,75 +1,125 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+  
 
-> Description the project.
+# Bookstore
 
+  
+
+> Bookstore is a single page web application that allows the user to add or remove a book and track their progress while reading.
+  
+
+## Live Demo
+
+> Comming soon...⌛️
+
+  
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+  
 
-## Live Demo (if available)
+- HTML5
 
-[Live Demo Link](https://livedemo.com)
+- CSS3
 
+- React as a front-end framework
 
+  
+
+### Technologies used
+
+- Git, Github.
+- babel.
+- Webpack.
+- Linters.
+
+  
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
+
 ### Prerequisites
 
-### Setup
+- use git clone in order to get the copy this repo. You need to have atleast basic understanding of JavaScript.
+
+
+## Setup
+
+To get a local copy up and running you'll need to have [NodeJS](https://nodejs.org/en/download/) installed on your local machine.
+
 
 ### Install
 
+After installing NodeJS please follow the next steps...
+
+  
+
 ### Usage
 
-### Run tests
+-- To clone this project use:
+```bash
 
-### Deployment
+git clone https://github.com/AbelG101/Bookstore.git
+
+```
+-- for installing dev dependecies use:
+
+```bash
+
+npm install
+
+```
+
+-- to run the project use:
+
+```bash
+
+npm run build
+
+```
+
+-- After installing the dependencies you can run tests using this command:
 
 
+## Author
 
-## Authors
+  
 
-👤 **Author1**
+👤 **Abel Gebeyehu**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+  
 
-👤 **Author2**
+- GitHub: [@AbelG101](https://github.com/AbelG101)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [Abel Gebeyehu](https://www.linkedin.com/in/abel-gebeyehu-779743183/)
+
+  
+  
 
 ## 🤝 Contributing
 
+  
+
 Contributions, issues, and feature requests are welcome!
+
+  
 
 Feel free to check the [issues page](../../issues/).
 
+  
+
 ## Show your support
+
+  
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+  
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+  
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.

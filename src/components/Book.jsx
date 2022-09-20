@@ -5,6 +5,9 @@ import { removeBook } from '../redux/books/books';
 const Book = (props) => {
   const { id, title, author } = props;
   const dispatch = useDispatch();
+  const callRemoveBook = (id) => {
+    dispatch(removeBook((id)));
+  };
   return (
     <div className="book">
       <div className="book-info">
@@ -13,7 +16,7 @@ const Book = (props) => {
         <div className="action-btns-container">
           <button type="button" className="action-btn comment">Comments</button>
           <div className="vertical-divider" />
-          <button onClick={() => (dispatch(removeBook((id))))} type="button" className="action-btn remove">Remove</button>
+          <button onClick={() => callRemoveBook(id)} type="button" className="action-btn remove">Remove</button>
           <div className="vertical-divider" />
           <button type="button" className="action-btn edit">Edit</button>
         </div>

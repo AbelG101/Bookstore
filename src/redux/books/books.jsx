@@ -4,19 +4,35 @@ const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 const GET_BOOK = 'GET_BOOK';
 
-const addBook = (id, title, author) => ({
-  type: ADD_BOOK,
-  book: {
-    id,
+const addBook = (id, title, author) => (dispatch) => {
+  axios.post('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/OoMg7JW7xItdmWuHqq1t/books/', {
+    item_id: id,
     title,
     author,
-  },
-});
+    category: 'Fiction',
+  }).then(() => {
+    dispatch({
+      type: ADD_BOOK,
+      book: {
+        id,
+        title,
+        author,
+      },
+    });
+  });
+};
 
-const removeBook = (id) => ({
-  type: REMOVE_BOOK,
-  id,
-});
+const removeBook = (id) => (dispatch) => {
+  const deleteUrl = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/OoMg7JW7xItdmWuHqq1t/books/${id}`;
+  axios.delete(deleteUrl, {
+    item_id: id,
+  }).then(() => {
+    dispatch({
+      type: REMOVE_BOOK,
+      id,
+    });
+  });
+};
 
 const fetchBooks = () => (dispatch) => {
   axios.get('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/OoMg7JW7xItdmWuHqq1t/books/').then((response) => {

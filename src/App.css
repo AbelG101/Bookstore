@@ -141,3 +141,90 @@ a {
 }
 
 /* ---BOOK-INFO-- */
+/* ---PROGRESS-INFO-- */
+
+.progress-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.progress-amount {
+  display: inherit;
+  align-items: center;
+}
+
+.progress-bar {
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 3px solid #307bbe;
+  border-left-color: rgb(48, 123, 190);
+  border-left-color: #e8e8e8;
+  transform: rotate(45deg);
+  margin-right: 0.7rem;
+  transition: 0.4s ease-in;
+}
+
+.progress-bar:hover {
+  transform: rotate(405deg);
+  border: 3px solid hsl(27, 97%, 51%);
+  border-left-color: rgb(48, 123, 190);
+  border-left-color: #e8e8e8;
+}
+
+.progress-percent {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progress-percent .amount {
+  color: #121212;
+  font-size: 1.5rem;
+}
+
+.progress-percent .completion  {
+  color: #999999;
+  font-weight: lighter;
+  font-size: 0.7rem;
+}
+
+.progress-divider {
+  background-color: #e8e8e8;
+  width: 0.12rem;
+  height: 4.375rem;
+  margin: 0 3.688rem 0 4.938rem;
+}
+
+.chapter-info {
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 11rem;
+}
+
+.chapter-info .heading {
+  font-size: 0.55rem;
+  color: #999999;
+}
+
+.chapter-info .current-chapter {
+  font-size: 0.75rem;
+  font-weight: lighter;
+}
+
+.update-progress-btn {
+  background-color: #0290ff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 20px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* ---PROGRESS-INFO-- */
+
+/* ---BOOKS-STYLING-- */

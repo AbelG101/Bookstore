@@ -3,9 +3,10 @@ import axios from 'axios';
 const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 const GET_BOOK = 'GET_BOOK';
+const API_URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/OoMg7JW7xItdmWuHqq1t/books/';
 
 const addBook = (id, title, author) => (dispatch) => {
-  axios.post('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/OoMg7JW7xItdmWuHqq1t/books/', {
+  axios.post(API_URL, {
     item_id: id,
     title,
     author,
@@ -23,7 +24,7 @@ const addBook = (id, title, author) => (dispatch) => {
 };
 
 const removeBook = (id) => (dispatch) => {
-  const deleteUrl = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/OoMg7JW7xItdmWuHqq1t/books/${id}`;
+  const deleteUrl = `${API_URL}${id}`;
   axios.delete(deleteUrl, {
     item_id: id,
   }).then(() => {
@@ -35,7 +36,7 @@ const removeBook = (id) => (dispatch) => {
 };
 
 const fetchBooks = () => (dispatch) => {
-  axios.get('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/OoMg7JW7xItdmWuHqq1t/books/').then((response) => {
+  axios.get(API_URL).then((response) => {
     const books = Object.keys(response.data).map((key) => {
       const book = response.data[key][0];
       return {

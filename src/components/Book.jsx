@@ -6,7 +6,7 @@ const Book = (props) => {
   const { id, title, author } = props;
   const dispatch = useDispatch();
   const callRemoveBook = (id) => {
-    dispatch(removeBook((id)));
+    dispatch(removeBook(id));
   };
   return (
     <div className="book">

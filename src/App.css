@@ -77,4 +77,25 @@ a {
   color: #0290ff;
 }
 
-/* ---NAV-BAR-STYLING-- */
+/* ---NAV-BAR-STYLING////-- */
+
+/* ---BOOKS-STYLING-- */
+
+.books-container {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .938rem;
+  width: 90%;
+  margin: 1.5rem auto 0 auto;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.8rem;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+}

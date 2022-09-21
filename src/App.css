@@ -21,3 +21,11 @@ ul {
 a {
   text-decoration: none;
 }
+
+.container {
+  margin: 0 2.5rem 4.063rem 0;
+  padding: 0 0 5.625rem;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
+}

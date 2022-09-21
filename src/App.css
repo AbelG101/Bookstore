@@ -291,3 +291,26 @@ a {
 }
 
 /* --ADD-BOOK-STYLING--- */
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.category-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.check-status-btn {
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  letter-spacing: 0.5px;
+  color: #fff;
+}

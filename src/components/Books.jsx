@@ -10,11 +10,11 @@ const Books = () => {
     dispatch(fetchBooks());
   }, [dispatch]);
   return (
-    <>
+    <div className="books-container">
       {books.map(({ id, title, author }) => (
         <Book key={id} id={id} title={title} author={author} />
       ))}
-    </>
+    </div>
   );
 };
 

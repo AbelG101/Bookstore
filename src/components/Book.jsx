@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
@@ -6,7 +7,12 @@ const Book = (props) => {
   const { id, title, author } = props;
   const dispatch = useDispatch();
   const callRemoveBook = (id) => {
-    dispatch(removeBook((id)));
+    const deleteUrl = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/OoMg7JW7xItdmWuHqq1t/books/${id}`;
+    axios.delete(deleteUrl, {
+      item_id: id,
+    }).then(() => {
+      dispatch(removeBook((id)));
+    });
   };
   return (
     <div className="book">

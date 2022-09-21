@@ -99,3 +99,45 @@ a {
   background-color: #fff;
   border: 1px solid #e8e8e8;
 }
+
+/* ---BOOK-INFO-- */
+
+.book-info {
+  display: inherit;
+  flex-direction: column;
+}
+
+.book-name {
+  color: #000;
+  font-weight: bold;
+}
+
+.author {
+  font-size: 0.7rem;
+  color: #4386bf;
+  font-weight: lighter;
+}
+
+.action-btns-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.action-btn {
+  font-weight: lighter;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #4386bf;
+}
+
+.vertical-divider {
+  width: 0.08rem;
+  height: 0.8rem;
+  background-color: #e8e8e8;
+  margin: 0 0.7rem;
+}
+
+/* ---BOOK-INFO-- */

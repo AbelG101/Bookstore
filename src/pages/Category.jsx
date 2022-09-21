@@ -8,8 +8,12 @@ const Category = () => {
 
   return (
     <>
-      <p>{status}</p>
-      <button onClick={() => dispatch(checkStatus())} type="button">Check status</button>
+      <div className="category-container">
+        <div className="category-info">
+          <p>{status}</p>
+          <button className="check-status-btn" onClick={() => dispatch(checkStatus())} type="button">Check status</button>
+        </div>
+      </div>
     </>
   );
 };
